@@ -18,10 +18,9 @@ http://compling.hss.ntu.edu.sg/omw/cgi-bin/wn-gridx.cgi?gridmode=cow
   * Wordnet LMF (zipped xml http://compling.hss.ntu.edu.sg/omw/wns/cmn+xml.zip
 
 ## 算法思想
-  * 遍历data文件，只保留名词性词语   
-  * 获得名词性词语的编号 和 文字内容，存放到字典中  
-  * 利用正则匹配，对xml文档进行预处理，获得每个编号词语的上下位关系词 
-  * 得到的上下位关系词对，存放到上下位关系数据集中
+  * 预处理wn-data-cmn.tab文件:保留文件中所有名词性词语的编号和词义    
+  * 解析xml文档:利用正则匹配，对xml文档进行预处理，获得每个编号词语的上下位关系词 
+  * 抽取上下位关系词对,存放到上下位关系数据集中
 
 ## References
 Shan Wang and Francis Bond (2013)
